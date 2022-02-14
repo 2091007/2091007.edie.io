@@ -1,0 +1,837 @@
+@charset "UTF-8"; /* 文字コードの指定 */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;800&family=Montserrat:wght@700&family=Poppins:wght@500&display=swap');/* Google Fonts用のCSSを読み込み */
+/*幅PC版1440px　sp版375px*/
+
+
+li {
+     list-style: none;
+}
+
+/*ここから ヘッダー*/
+
+#header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.9vw 3.7vw 0vw 3.7vw;
+}
+
+    h1{
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.5vw;
+        font-weight: 800;
+        color: #333333;
+    }
+    
+    #navi-menu {
+        width: 49vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navi-menu li {
+        font-family: 'Heebo', sans-serif;
+        margin-left: 2.3vw;
+    }
+    
+    #navi-menu li a {
+        color: #333333;
+        text-decoration: none;
+    }
+
+#hamburger-button {
+    display: none;
+}
+    
+    #hamburger-button .hamburger-bars {
+        font-size: 6.2vw;
+        color: #333333;
+    }
+    
+    #hamburger-navi-menu {
+        margin: 6.2vw;
+        display: none;
+    }
+
+/*ここまで ヘッダー*/
+
+/*ここから ここから main-Home部分*/
+#main-Home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    margin: 6.6vw 25vw 0vw 19.2vw;
+}
+    .unhappy {
+        font-size: 1.25vw;
+        color: #2D9CDB;
+    }
+    
+    .Wecreate {
+        font-size: 3.33vw;
+        color: #333333;
+        margin-top: 1.5vw;
+        margin-bottom: 2vw;
+    }
+
+.hero img {
+    width: 92.5vw;
+    border-radius: 1vw;
+    margin: 0vw 3vw 0vw 3vw;
+}
+
+#Story {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    margin: 2.9vw 20vw 0vw 19.2vw;
+}
+    .Story {
+        font-size: 3.33vw;
+        color: #333333;
+    }
+    
+    .WeHelp {
+        width: 25.4vw;
+        font-size: 1.25vw;
+        font-weight: 400;
+        color: #4F4F4F;
+        margin-top: 2.9vw;
+    }
+
+    .WantUs01 {
+        font-size: 0.98vw;
+        color: #828282;
+        margin-top: 2.9vw;
+    }
+
+    .contact01 {
+        display: flex;
+    }
+    
+        .contact01 input[type="email"]{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25vw;
+            background-color: #F2F2F2;
+            width: 24.3vw;
+            height: 4vw;
+            border-radius: 1vw;
+            padding-left: 0.7vw;
+            border:none;
+        }
+        
+            input::placeholder {
+                color: #BDBDBD;
+                padding-left: 1vw;
+            }
+            
+        .contact01 input[type="submit"]{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25vw;
+            background-color: #2D9CDB;
+            color: #F2F2F2;
+            width: 6.53vw;
+            height: 3.8vw;
+            border-radius: 1vw;
+            border:none;
+            margin: 0.1vw 0.1vw 0.1vw -6.7vw;
+        }
+
+/*ここまで main-Home部分*/
+
+
+/*ここから main-Services部分*/
+#main-Services {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    color: #333333;
+    margin:13.8vw 0vw 2.9vw 11.4vw;
+}
+
+    #high_demand_services {
+        width:77vw;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin: 0vw 11.5vw;
+    }
+    
+        #high_demand_services li {
+            width: 24.3vw;
+            height: 29.3vw;
+            display: inline-flex;
+            flex-direction: column;
+            align-items:flex-start;
+            /*border: solid 0.1vw #BDBDBD;*/  /*3つの区別がつくようにメモとしての枠線*/
+            border-radius: 2vw;           
+            padding: 3vw 2.3vw 3vw 2.3vw;
+        }
+        
+        #high_demand_services li:hover {
+            box-shadow: 0.05vw 0.05vw 1vw 1vw #F2F2F2; /*box-shadow: ◯px(右方向の影) ◯px(下方向の影) ◯px(影のぼかし具合) 色 x(影のぼh広がり合) 色;*/
+            cursor:pointer
+        }
+        
+            #high_demand_services li img {
+                width: 4.65vw;
+            }
+            
+            li .services_title {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.6vw;
+                font-weight: 700;
+                color: #333333;
+                margin-top: 2.43vw;
+            }
+            
+            li .services_content{
+                width: 19vw;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.1vw;
+                font-weight: 400;
+                color: #4F4F4F;
+                margin-top: 1.66vw;
+                margin-bottom: 2.08vw;
+            }
+            
+            li .enter input[type="submit"] {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.1vw;
+                color: #828282;
+                background-color: #E0E0E0;
+                border-radius: 1vw;
+                border:none;
+                width: 8.05vw;
+                height: 3vw;
+            }
+            
+            li .enter input[type="submit"]:hover {
+                color: #FFFFFF;
+                background-color: #2D9CDB;
+
+            }
+            
+            
+/*ここまで main-Services部分*/    
+
+
+/*ここから main-Our Works部分*/
+#course-list_sp {
+    display: none;
+}
+
+#main-OurWorks {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    color: #333333;
+    margin: 13.47vw 57.4vw 0vw 11.4vw;
+}
+
+.course-list_PC0{
+    width: 77vw;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+    #course-list_PC1 {
+        margin: 12vw 1.5vw 0vw 10vw;
+    }
+        #course-list_PC1 li{
+            margin-bottom: 7.6vw;
+        }
+    
+    #course-list_PC2 {
+        margin: 2vw 10vw 0vw 0vw;
+    }
+    
+        #course-list_PC2 li{
+            margin-bottom: 7.6vw;
+        }
+
+
+        .GoodDesin img {
+            width:37.8vw;
+            border-radius: 1.5vw;
+        }
+        
+        .cap1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.97vw;
+            font-weight: 300;
+            color: #828282;
+            margin-top: 1.38vw;
+        }
+        
+        .cap2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6vw;
+            color: #333333;
+        }
+        
+        .seemore {
+            display: flex;
+            flex-direction:row;
+            justify-content: flex-end;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.66vw;
+            margin-bottom: 0vw;
+        }
+        
+        .seemore a {
+            color: #2D9CDB;
+            text-decoration: none;    
+        }
+
+
+/*ここまで main-Our Works部分*/
+
+
+/*ここから main-Clients部分*/
+#main-Clients {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .main-Clients {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-top: 24.4vw;
+        margin-left: 11.8vw;
+    }
+    
+        .meet{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25vw;
+            color: #EB5757;
+        }
+        
+        .laidbackteam {
+            width:19.45vw;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5vw;
+            color: #333333;
+        }
+        
+        .LoremIpsum{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.11vw;
+            font-weight: 400;
+            color: #4F4F4F;
+        }
+
+    .teamface {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding:16.73vw 11vw 0vw 22.5vw;
+        position: relative
+    }
+        .face2 img {
+            width:18.05vw;
+            border-radius: 2vw;
+        }
+        .face1 img {
+            width:20.8vw;
+            border-radius: 2vw;
+            position: absolute;
+            top: 25.76vw; 
+            left: 0vw;
+        }
+        
+        .face3 img {
+            width:20.8vw;
+            border-radius: 2vw;
+        }
+
+.explanation {
+    width: 65.1vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    color: #333333;
+    margin-top: 13.6vw;
+    margin-left: 11.8vw;
+}
+
+#CarlosTran {
+    display:flex;
+    flex-direction: row;
+    margin: 2.5vw 0vw 14vw 11.8vw;
+}
+
+.face4 img{
+    width:6.25vw;
+    border-radius: 1vw;
+    margin-right: 0.83vw;
+}
+
+    .CarlosTran {
+        display:flex;
+        flex-direction: column;
+    }
+    
+        .CT{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.66vw;
+            color: #333333;
+            margin-bottom: 0.83vw;
+        }
+        .Gatsby{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25vw;
+            color: #828282;
+        }
+
+
+
+/*ここまでmain-Clients部分*/
+
+
+
+/*ここから フッター部分*/
+#main-Contact {
+    height: 26.7vw;
+    background-color: #100E1D;
+}
+.footer1 {
+    display: flex;
+    flex-direction:row;
+}
+
+    .footernavi ul {
+        display: flex;
+        flex-direction:column;
+        justify-content:space-around;
+        height:12.5vw;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.66vw;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin: 3.2vw 17vw 0vw 11.6vw;
+    }
+    
+    .footernavi li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .Edie_icon {
+        font-family:  'Heebo', sans-serif;
+        font-size: 2.5vw;
+        color: #F2F2F2;
+        margin: 3.2vw 24.72vw 0vw 0vw;
+    }
+    
+    .icon a {
+        width: 2.67vw;
+        color: #F2F2F2;
+    } 
+    
+.Contact02 {
+    display: flex;
+    flex-direction:column;
+     
+}   
+    .WantUs{
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.97vw;
+        color: #F2F2F2;
+        margin-top: 3.2vw;    
+    }
+        
+        .contact02 {
+            display: flex;
+        }
+        
+            .contact02 input[type="email"]{
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.25vw;
+                background-color: #F2F2F2;
+                width: 24.3vw;
+                height: 4vw;
+                border-radius: 1vw;
+                padding-left: 0.7vw;
+                border:none;
+            }
+            
+                input::placeholder {
+                    color: #BDBDBD;
+                    padding-left: 1vw;
+                }
+                
+            .contact02 input[type="submit"]{
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.25vw;
+                background-color: #2D9CDB;
+                color: #F2F2F2;
+                width: 6.53vw;
+                height: 3.8vw;
+                border-radius: 1vw;
+                border:none;
+                margin: 0.1vw 0.1vw 0.1vw -6.7vw;
+            }
+
+
+.footer2 {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.97vw;
+        color: #F2F2F2;
+        margin-top: 8.19vw;
+        margin-bottom: 1.67vw;
+    }
+    
+    .footer_a {
+        font-weight: 500;
+        margin-right: 0.5vw;
+    }
+    .footer_b {
+        font-weight: 700;
+        margin-right: 0.5vw;
+        text-decoration-line: underline;
+    }
+    
+    .footer_c {
+        font-weight: 500;
+    }
+    
+/*ここまで フッター部分*/
+
+
+
+
+/*メディアクエリ*/
+@media screen and (max-width: 1024px) { /*1024px以下の場合*/
+
+/*ここまでヘッダーのメディアクエリ部分*/
+    #hamburger-button {
+        display: block;
+    }
+    
+    #navi {
+        display: none;
+    }  
+    
+    h1{
+        font-size: 6.4vw;
+    }
+
+/*ここまでヘッダーのメディアクエリ部分*/
+
+
+/*ここから ここから main-Homeフォームのメディアクエリ部分*/
+
+#main-Home {
+    margin: 12.8vw 0vw 0vw 10.6vw;
+}
+    .unhappy {
+        font-size: 3.2vw;
+    }
+    
+    .Wecreate {
+        font-size: 6.4vw;
+        margin-bottom: 4vw;
+    }
+
+.hero img {
+    width: 92.8vw;
+    margin: 0vw 2.6vw 0vw 2.6vw;
+}
+
+#Story {
+    margin: 5.86vw 0vw 0vw 10.6vw;
+}
+    .Story {
+        font-size: 6.4vw;
+    }
+    
+    .WeHelp {
+        width: 73.3vw;
+        font-size: 3.2vw;
+        margin-top: 8.8vw;
+    }
+
+    .WantUs01 {
+        font-size: 2.66vw;
+        color: #828282;
+        margin-top: 8.26vw;
+        margin-bottom: 1vw;
+    }
+
+    .contact01 {
+        display: flex;
+    }
+    
+        .contact01 input[type="email"]{
+            font-size: 3.73vw;
+            width: 77.6vw;
+            height: 12.5vw;
+            padding-left: 2.6vw;
+            border-radius: 2vw;
+        }
+            
+        .contact01 input[type="submit"]{
+            font-size: 3.73vw;
+            width: 18.9vw;
+            height: 10.4vw;
+            border-radius: 2vw;
+            margin: 1vw 0.1vw 1vw -19vw;
+        }
+
+/*ここまで ここから main-Homeフォームのメディアクエリ部分*/
+
+
+/*ここから main-Servicesのメディアクエリ部分*/
+#main-Services {
+    font-size: 6.4vw;
+    margin:27.2vw 0vw 20vw 13.06vw;
+}
+
+    #high_demand_services {
+        display: flex;
+        flex-direction: column;
+        margin: 0vw 4vw;
+    }
+    
+        #high_demand_services li {
+            width: 90.9vw;
+            height: 112.5vw;
+            border-radius: 3vw;            /*3つの区別がつくようにメモとしての枠線*/
+            padding-left: 9.06vw ;
+            margin-bottom: 20vw;
+        }
+        
+        #high_demand_services li:hover {
+            box-shadow: 0.1vw 0.1vw 3vw 3vw #F2F2F2; /*box-shadow: ◯px(右方向の影) ◯px(下方向の影) ◯px(影のぼかし具合) 色x影のの広がり具合 色;*/
+            cursor:pointer
+        }
+
+            #high_demand_services li img {
+                width: 17.86vw;
+                margin-top: 10vw;
+            }
+            
+            li .services_title {
+                font-size: 6.4vw;
+                margin-top: 8vw;
+            }
+            
+            li .services_content{
+                width: 72.8vw;
+                font-size: 4.26vw;
+                margin-top: 6.4vw;
+                margin-bottom: 8vw;
+            }
+            
+            li .enter input[type="submit"] {
+                font-size: 4.26vw;
+                border-radius: 3vw;
+                border:none;
+                width: 30.9vw;
+                height: 11.2vw;
+            }
+
+/*ここまで main-Servicesのメディアクエリ部分*/ 
+
+
+/*ここから main-Our Worksメディアクエリ部分*/
+.course-list_PC0 {
+    display: none;
+}
+
+#course-list_sp {
+    display: block;
+}
+
+#main-OurWorks {
+    font-size: 6.4vw;
+    margin: 15vw 16.8vw 12.8vw 12vw;
+}
+    .course-list_sp li{
+        display: flex;
+        justify-content:center;
+        margin-bottom: 12vw;
+    }
+        .GoodDesin img {
+            width:93.3vw;
+            border-radius: 4vw;
+        }
+        
+        .cap1 {
+            font-size: 3.2vw;
+            margin-top: 2.67vw;
+        }
+        
+        .cap2 {
+            font-size: 4.8vw;
+        }
+        
+        .seemore {
+            justify-content: flex-start;
+            font-size: 4.8vw;
+            margin-left: 2.67vw;
+        }
+
+
+/*ここまで main-Our Worksのメディアクエリ部分*/
+
+
+/*ここから main-Clientsのメディアクエリ部分*/
+#main-Clients {
+    display:block;
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+}
+    .main-Clients {
+        margin-top: 26.67vw;
+        margin-left: 2.67vw;
+    }
+    
+        .meet{
+            font-size: 4.8vw;
+        }
+        
+        .laidbackteam {
+            width:74.67vw;
+            font-size: 9.6vw;
+        }
+        
+        .LoremIpsum{
+            font-size: 4.26vw;
+        }
+
+    .teamface {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 9.6vw 7vw 0vw 52.5vw;
+        position: relative
+    }
+        .face2 img {
+            width:38.6vw;
+            border-radius: 4vw;
+        }
+        .face1 img {
+            width:43.27vw;
+            border-radius: 4vw;
+            position: absolute;
+            top: 28.8vw; 
+            left: 6vw;
+        }
+        
+        .face3 img {
+            width:43.27vw;
+            border-radius: 4vw;
+        }
+
+.explanation {
+    width: 93.6vw;
+    font-size: 6.4vw;
+    margin-top: 26.75vw;
+    margin-left: 2.67vw;
+}
+
+#CarlosTran {
+    margin: 8vw 0vw 27.46vw 2.67vw;
+}
+
+.face4 img{
+    width:22vw;
+    border-radius: 3vw;
+    margin-right: 8vw;
+}
+ 
+        .CT{
+            font-size: 6.4vw;
+            margin-bottom: 3.2vw;
+        }
+        .Gatsby{
+            font-size: 4.8vw;
+        }
+
+/*ここまでmain-Clientsのメディアクエリ部分*/
+ 
+
+/*ここから フッターのメディアクエリ部分*/
+#main-Contact {
+    height: 184.8vw;
+    color: #100E1D;
+
+}
+
+.footer1 {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    padding-left: 10.9vw;
+    padding-top:10vw;
+}
+
+    .footernavi ul {
+        height:12.5vw;
+        font-size: 4.8vw;
+        margin: 10vw 0vw 27vw 0vw;
+    }
+    
+    .Edie_icon {
+        font-size: 9.6vw;
+        margin: 0vw 0vw 17vw 0vw;
+    }
+    .icon a {
+    width: 2.67vw;
+    }
+    
+    .WantUs{
+        font-size: 2.67vw;
+        color: #828282;
+    }
+        
+            .contact02 input[type="email"]{
+                font-size: 3.73vw;
+                width: 77.6vw;
+                height: 12.5vw;
+                padding-left: 2.6vw;
+                border-radius: 3vw;
+            }
+            
+                input::placeholder {
+                    padding-left: 5.06vw;
+                }
+                
+            .contact02 input[type="submit"]{
+                font-size: 3.73vw;
+                width: 18.93vw;
+                height: 10.4vw;
+                border-radius: 3vw;
+                border:none;
+                margin: 1vw 1vw 1vw -19.93vw;
+            }
+
+
+.footer2 {
+        font-size: 3.73vw;
+        margin-top: 41.06vw;
+        margin-bottom: 6.4vw;
+    }
+    
+    .footer_a {
+        margin-right: 2.6vw;
+    }
+    .footer_b {
+        margin-right: 02.6vw;
+    }
+    
+    
+/*ここまで フッターのメディアクエリ部分*/
+    
+    
+    
+}
