@@ -301,7 +301,7 @@ li {
         display:flex;
         flex-direction: column;
         align-items:flex-start;
-        margin-top: 24.4vw;
+        margin-top: 16vw;
         margin-left: 11.8vw;
     }
     
@@ -329,7 +329,7 @@ li {
         display:flex;
         flex-direction: column;
         align-items:flex-start;
-        padding:16.73vw 11vw 0vw 22.5vw;
+        padding:8vw 11vw 0vw 22.5vw;
         position: relative
     }
         .face2 img {
@@ -340,7 +340,7 @@ li {
             width:20.8vw;
             border-radius: 2vw;
             position: absolute;
-            top: 25.76vw; 
+            top: 16vw; 
             left: 0vw;
         }
         
